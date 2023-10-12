@@ -37,13 +37,6 @@ def get_letter(attempt, guess):
     else:
         return user_input
 
-# def check(word):
-#     letters = []
-#     for i in word:
-#         i = None if i != ' ' else i
-#         letters.append(i)
-#     print(letters)
-
 
 def play(word):
     attempt = 6
@@ -73,7 +66,5 @@ def play(word):
 
 
 if __name__ == "__main__":
-    # word = get_rand_word(os.path.join('data', FILENAME))
-    word = get_rand_word('data.txt')
+    word = get_rand_word(os.path.join('data', FILENAME))
     play(word)
-    # check(word)
